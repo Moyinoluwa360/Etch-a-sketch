@@ -154,24 +154,101 @@ rainbowMode.addEventListener("click", () => {
         draw()
     }
 })
+// eventlistener for default brush
+const defaultBrush = document.querySelector("#defaultBrush");
+defaultBrush.addEventListener("click", () => {
+    draw()
+})
 // eventlistener for shading
-let clicked = 0
+let clicked = 1
 const shader = document.querySelector("#shadingEffect")
 shader.addEventListener("click",() => {
     let rowItemList = document.querySelectorAll(".rowItem");
-    let isClicked = false
-    for (let rowItemListCounter = 0; rowItemListCounter < rowItemList.length; rowItemListCounter++){
-        rowItemList[rowItemListCounter].addEventListener("mousedown",() => {
-            isClicked = true
-            rowItemList[rowItemListCounter].style.backgroundColor = "black" ;
-        })
-        rowItemList[rowItemListCounter].addEventListener("mouseover",() => {
-            if (isClicked){
-                rowItemList[rowItemListCounter].style.backgroundColor = "black" ;
-            }
-        })
-        rowItemList[rowItemListCounter].addEventListener("mouseup",() => {
-            isClicked = false
-        })
-}
+    if (clicked == 1){
+        clicked = 2
+        let isClicked = false
+        for (let rowItemListCounter = 0; rowItemListCounter < rowItemList.length; rowItemListCounter++){
+            rowItemList[rowItemListCounter].addEventListener("mousedown",() => {
+                isClicked = true
+                rowItemList[rowItemListCounter].style.backgroundColor = "rgb(209, 207, 205)" ;
+            })
+            rowItemList[rowItemListCounter].addEventListener("mouseover",() => {
+                if (isClicked){
+                    rowItemList[rowItemListCounter].style.backgroundColor = "rgb(209, 207, 205)" ;
+                }
+            })
+            rowItemList[rowItemListCounter].addEventListener("mouseup",() => {
+                isClicked = false
+            })
+    }
+    }else if(clicked == 2){
+        clicked = 3
+        let isClicked = false
+        for (let rowItemListCounter = 0; rowItemListCounter < rowItemList.length; rowItemListCounter++){
+            rowItemList[rowItemListCounter].addEventListener("mousedown",() => {
+                isClicked = true
+                rowItemList[rowItemListCounter].style.backgroundColor = "rgb(143, 140, 140)" ;
+            })
+            rowItemList[rowItemListCounter].addEventListener("mouseover",() => {
+                if (isClicked){
+                    rowItemList[rowItemListCounter].style.backgroundColor = "rgb(143, 140, 140)" ;
+                }
+            })
+            rowItemList[rowItemListCounter].addEventListener("mouseup",() => {
+                isClicked = false
+            })
+    }
+    }else if(clicked == 3){
+        clicked = 4
+        let isClicked = false
+        for (let rowItemListCounter = 0; rowItemListCounter < rowItemList.length; rowItemListCounter++){
+            rowItemList[rowItemListCounter].addEventListener("mousedown",() => {
+                isClicked = true
+                rowItemList[rowItemListCounter].style.backgroundColor = "rgb(102, 101, 100)" ;
+            })
+            rowItemList[rowItemListCounter].addEventListener("mouseover",() => {
+                if (isClicked){
+                    rowItemList[rowItemListCounter].style.backgroundColor = "rgb(102, 101, 100)" ;
+                }
+            })
+            rowItemList[rowItemListCounter].addEventListener("mouseup",() => {
+                isClicked = false
+            })
+    }
+    }else if(clicked == 4){
+        clicked = 5
+        let isClicked = false
+        for (let rowItemListCounter = 0; rowItemListCounter < rowItemList.length; rowItemListCounter++){
+            rowItemList[rowItemListCounter].addEventListener("mousedown",() => {
+                isClicked = true
+                rowItemList[rowItemListCounter].style.backgroundColor = "rgb(48, 47, 47)" ;
+            })
+            rowItemList[rowItemListCounter].addEventListener("mouseover",() => {
+                if (isClicked){
+                    rowItemList[rowItemListCounter].style.backgroundColor = "rgb(48, 47, 47)" ;
+                }
+            })
+            rowItemList[rowItemListCounter].addEventListener("mouseup",() => {
+                isClicked = false
+            })
+    }
+    }else if(clicked == 5){
+        clicked = 1
+        let isClicked = false
+        for (let rowItemListCounter = 0; rowItemListCounter < rowItemList.length; rowItemListCounter++){
+            rowItemList[rowItemListCounter].addEventListener("mousedown",() => {
+                isClicked = true
+                rowItemList[rowItemListCounter].style.backgroundColor = "rgb(0, 0, 0)" ;
+            })
+            rowItemList[rowItemListCounter].addEventListener("mouseover",() => {
+                if (isClicked){
+                    rowItemList[rowItemListCounter].style.backgroundColor = "rgb(0, 0, 0)" ;
+                }
+            })
+            rowItemList[rowItemListCounter].addEventListener("mouseup",() => {
+                isClicked = false
+            })
+    }
+    }
+ 
 })
