@@ -1,0 +1,25 @@
+#juniorContainer{
+    display: flex;
+    flex-direction:column;
+    width: 250px;
+    height: 250px;
+    border: 0.001px solid black ;
+    border-bottom: 0;
+    border-right: 0;
+
+}
+.row{
+    height: 50%;
+    display: flex;
+    border-bottom: 0px solid black;
+}
+.rowItem{
+    width: 50%;
+    border-bottom: 0.1px solid black;
+    border-right: 0.1px solid black;
+    margin: 0;
+}
+.seniorContainer{
+    display: flex;
+    justify-content: center;
+}
