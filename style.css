@@ -4,9 +4,12 @@
     width: 250px;
     height: 250px;
     border: 0.001px solid black ;
-    border-bottom: 0;
-    border-right: 0;
+    margin-right: 80px;
 
+}
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(97, 99, 96);
 }
 .row{
     height: 50%;
@@ -21,5 +24,24 @@
 }
 .seniorContainer{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+}
+.buttonsCon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 250px;
+}
+.buttons{
+    font-size: 10px;
+    background-color: green;
+    border-style: none;
+    height: 22px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: -1px 2px 2px rgb(112, 133, 102);
+}
+.buttons:hover{
+    background-color: rgb(152, 233, 132);
+    box-shadow: -2px 2px 4px rgb(172, 182, 168);
 }
