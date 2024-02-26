@@ -4,7 +4,21 @@
     width: 250px;
     height: 250px;
     border: 0.001px solid black ;
-    margin-right: 80px;
+    
+
+}
+#junior1Con{
+    width: 270px;
+    height: 270px;
+    box-shadow: -3px -3px 4px rgb(172, 182, 168);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-right: 50px;
+    padding-left: 25px;
+    border-radius: 10px;
+
 
 }
 h1{
@@ -29,19 +43,25 @@ h1{
 .buttonsCon{
     display: flex;
     flex-direction: column;
+    align-content: center;
     justify-content: space-around;
-    height: 250px;
+    height: 270px;
+    width: 120px;
+    padding-left: 20px;
+    box-shadow: -3px -3px 4px rgb(172, 182, 168);
+    border-radius: 10px;
+
 }
 .buttons{
     font-size: 10px;
     background-color: green;
     border-style: none;
     height: 22px;
+    width: 100px;
     border-radius: 5px;
     color: white;
     box-shadow: -1px 2px 2px rgb(112, 133, 102);
 }
 .buttons:hover{
     background-color: rgb(152, 233, 132);
-    box-shadow: -2px 2px 4px rgb(172, 182, 168);
 }
